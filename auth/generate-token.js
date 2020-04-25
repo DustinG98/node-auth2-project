@@ -4,7 +4,8 @@ module.exports = (user) => {
     console.log("generating token")
     const payload = {
         subject: user.id,
-        username: user.username
+        username: user.username,
+        department: user.department
     }
     const options = {
         expiresIn: '1d'
